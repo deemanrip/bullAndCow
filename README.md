@@ -4,6 +4,6 @@ Used frameworks:
 - Spring MVC
 - Spring
 - JAXB (xml parser)
-Web server: Tomcat 7.
+Web server: Tomcat 7./n
 War file is located in 'target' folder.
 Data is stored in xml file.
