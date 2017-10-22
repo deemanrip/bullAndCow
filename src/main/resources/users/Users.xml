@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+    <user>
+        <login>deeman</login>
+        <password>123</password>
+        <statistics>
+            <attempts>18</attempts>
+            <games>4</games>
+        </statistics>
+    </user>
+    <user>
+        <login>deeman2</login>
+        <password>1</password>
+        <statistics>
+            <attempts>5</attempts>
+            <games>4</games>
+        </statistics>
+    </user>
+    <user>
+        <login>test</login>
+        <password>1</password>
+        <statistics>
+            <attempts>0</attempts>
+            <games>0</games>
+        </statistics>
+    </user>
+    <user>
+        <login>new test</login>
+        <password>test</password>
+        <statistics>
+            <attempts>9</attempts>
+            <games>1</games>
+        </statistics>
+    </user>
+    <user>
+        <login>&amp;#1082;&amp;#1089;&amp;#1102;&amp;#1096;&amp;#1072;</login>
+        <password>qwerty</password>
+        <statistics>
+            <attempts>12</attempts>
+            <games>3</games>
+        </statistics>
+    </user>
+    <user>
+        <login>561</login>
+        <password>123</password>
+        <statistics>
+            <attempts>0</attempts>
+            <games>0</games>
+        </statistics>
+    </user>
+</users>
