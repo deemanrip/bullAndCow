@@ -28,7 +28,7 @@ public class User implements Comparable<User> {
 
 
     /**
-     * Consolidates comparing functionality to {@link Statistics} class
+     * Delegates comparing functionality to {@link Statistics} class
      * @param o
      * @return int
      */
