@@ -28,7 +28,9 @@ public class UserServiceXMLImpl implements UserService {
      * @throws JAXBException
      */
     public void setContext() throws JAXBException {
-        context = JAXBContext.newInstance(Users.class);
+        if (context == null) {
+            context = JAXBContext.newInstance(Users.class);
+        }
     }
 
     /**
@@ -130,8 +132,7 @@ public class UserServiceXMLImpl implements UserService {
      * @throws JAXBException
      */
     private void marshal(Users users) throws JAXBException {
-        if (context == null)
-            setContext();
+        setContext();
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         marshaller.marshal(users, USERS_FILE);
@@ -143,8 +144,7 @@ public class UserServiceXMLImpl implements UserService {
      * @throws JAXBException
      */
     private Users unmarshal() throws JAXBException {
-        if (context == null)
-            setContext();
+        setContext();
         Unmarshaller unmarshaller = context.createUnmarshaller();
         return (Users) unmarshaller.unmarshal(USERS_FILE);
     }
